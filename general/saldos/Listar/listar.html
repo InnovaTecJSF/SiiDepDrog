@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldos</title>
+    <script src="https://kit.fontawesome.com/5de3bdc251.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+   
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Tabla de productos</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     
+        <div class="navbar">
+            <ul class="navbar-top">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Saldo</a></li>
+              <li><a href="#">Listar</a></li>
+            </ul>
+            <div class="navbar-bottom">
+              <button>Buscar</button>
+              <button>Crear</button>
+              <button>Listar</button>
+            </div>
+          </div>
+        
+          <div class="navbar-Adimnistrar-Saldos">
+            <h2>Saldos</h2>
+            <div class="alert">
+              Alerta: Productos con saldo cero.
+            <div class="alert">
+              Alerta: Productos sin región.
+            </div>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Código barra</th>
+                  <th>Referencia</th>
+                  <th>Descripción</th>
+                  <th>Presentación</th>
+                  <th>Con ubicación</th>
+                  <th>Región</th>
+                  <th>Ubicación</th>
+                  <th>Subbodega</th>
+                  <th>Código verificación</th>
+                  <th>Saldo</th>
+                  <th>Comprometido</th>
+                  <th>Saldo disponible</th>
+                  <th>Lote</th>
+                  <th>Fecha vencimiento</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" name="codigo_barra"></td>
+                  <td><input type="text" name="referencia"></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <select name="con_ubicacion">
+                      <option value="si">Si</option>
+                      <option value="no">No</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <select name="subbodega">
+                      <option value="recepcion">Recepción</option>
+                      <option value="picking">Picking</option>
+                      <option value="originales">Originales</option>
+                      <option value="devoluciones">Devoluciones</option>
+                    </select>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><input type="text" name="Lote"></td>
+                  <td><input type="text" name="Fecha_Vencimiento"></td>
+                  
+                </tr>
+                <tr>
+                  <td>3265869742</td>
+                  <td>112045</td>
+                  <td>Producto 2</td>
+                  <td>Presentación 2</td>
+                  <td>Si</td>
+                  <td>Region 2</td>
+                  <td>Ubicacion 2</td>
+                  <td>Recepcion</td>
+                  <td>CV-002</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>Lote 2</td>
+                  <td>2023-02-01</td>
+                  
+                </tr>
+                
+                <tr>
+                    <td>12345678910</td>
+                    <td>94526</td>
+                    <td>Producto 2</td>
+                    <td>Presentación 2</td>
+                    <td>No</td>
+                    <td>Región 2</td>
+                    <td>Ubicacion 2</td>
+                    <td>Picking</td>
+                    <td>CV-002</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Lote 2</td>
+                    <td>2023-02-01</td>
+                  
+                  </tr>
+                  
+                  <tr>
+                    <td>3265869742</td>
+                  <td>112045</td>
+                  <td>Producto 2</td>
+                  <td>Presentación 2</td>
+                  <td>Si</td>
+                  <td>Region 2</td>
+                  <td>Ubicacion 2</td>
+                  <td>Recepcion</td>
+                  <td>CV-002</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>Lote 2</td>
+                  <td>2023-02-01</td>
+
+                </tr>
+                <tr>
+                    <td>12345678910</td>
+                    <td>94526</td>
+                    <td>Producto 2</td>
+                    <td>Presentación 2</td>
+                    <td>No</td>
+                    <td>Región 2</td>
+                    <td>Ubicacion 2</td>
+                    <td>Picking</td>
+                    <td>CV-002</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Lote 2</td>
+                    <td>2023-02-01</td>
+            
+                  </tr>
+
+                
+
+
+              </tbody>
+            </table>
+          </div>
+          
+      <script src="listar.js"></script>
+</body>
+</html>

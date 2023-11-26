@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Saldo</a></li>
+      <li><a href="#">Ver</a></li>
+    </ul>
+  </nav>
+  <div class="buttons">
+    <button>Borrar</button>
+    <button>Buscar</button>
+    <button id="createButton">Crear</button>
+    <button id="listButton">Listar</button>
+    <button id="modifyButton">Modificar</button>
+    <button id="viewButton">Ver</button>
+  </div>
+
+  <form id="viewForm" class="hidden">
+    <h2>Ver Información</h2>
+    <label for="bodega">Bodega</label>
+    <input type="text" id="bodega" name="bodega" readonly>
+    <label for="producto">Producto</label>
+    <input type="text" id="producto" name="producto" readonly>
+    <label for="descripcion">Descripción</label>
+    <input type="text" id="descripcion" name="descripcion" readonly>
+    <label for="ubicacion">Ubicación</label>
+    <input type="text" id="ubicacion" name="ubicacion" readonly>
+    <label for="subbodega">Subbodega</label>
+    <input type="text" id="subbodega" name="subbodega" readonly>
+    <label for="saldo">Saldo</label>
+    <input type="text" id="saldo" name="saldo" readonly>
+    <label for="comprometido">Comprometido</label>
+    <input type="text" id="comprometido" name="comprometido" readonly>
+    <label for="saldoDisponible">Saldo Disponible</label>
+    <input type="text" id="saldoDisponible" name="saldoDisponible" readonly>
+    <label for="lote">Lote</label>
+    <input type="text" id="lote" name="lote" readonly>
+    <label for="fechaVencimiento">Fecha de Vencimiento</label>
+    <input type="text" id="fechaVencimiento" name="fechaVencimiento" readonly>
+    <label for="maximo">Máximo</label>
+    <input type="text" id="maximo" name="maximo" readonly>
+    <label for="minimo">Mínimo</label>
+    <input type="text" id="minimo" name="minimo" readonly>
+  </form>
+
+  <form id="modifyForm" class="hidden">
+    <h2>Actualizar Saldo</h2>
+    <p class="required">Campos con * son obligatorios</p>
+    <label for="bodega">Bodega*</label>
+    <select id="bodega" name="bodega">
+      <option value="ciudad1">Ciudad 1</option>
+      <option value="ciudad2">Ciudad 2</option>
+      <option value="ciudad3">Ciudad 3</option>
+      <option value="ciudad4">Ciudad 4</option>
+    </select>
+    <label for="producto">Producto*</label>
+    <input type="text" id="producto" name="producto" placeholder="Buscar producto...">
+    <label for="subbodega">Subbodega*</label>
+    <select id="subbodega" name="subbodega">
+      <option value="devolucion">Devolución</option>
+      <option value="recepcion">Recepción</option>
+      <option value="picking">Picking</option>
+      <option value="originales">Originales</option>
+    </select>
+    <label for="ubicacion">Ubicación</label>
+    <input type="text" id="ubicacion" name="ubicacion" placeholder="Buscar ubicación...">
+    <label for="saldo">Saldo*</label>
+    <input type="text" id="saldo" name="saldo">
+    <label for="comprometido">Comprometido</label>
+    <input type="text" id="comprometido" name="comprometido" readonly>
+    <label for="lote">Lote</label>
+    <input type="text" id="lote" name="lote">
+    <label for="fechaVencimiento">Fecha de Vencimiento</label>
+    <input type="text" id="fechaVencimiento" name="fechaVencimiento">
+    <label for="maximo">Máximo</label>
+    <input type="text" id="maximo" name="maximo">
+    <label for="minimo">Mínimo</label>
+    <input type="text" id="minimo" name="minimo">
+    <button type="submit">Guardar</button>
+  </form>
+
+  <script src="crear.js"></script>
+</body>
+</html>
